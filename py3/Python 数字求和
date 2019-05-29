@@ -1,0 +1,20 @@
+#! /usr/bin/env python
+
+
+#以下实例为通过用户输入两个数字，并计算两个数字之和：
+def get_num():
+    val = input("请输入数字:")
+    try:
+        val = int(val)
+    except:
+        val = float(val)
+    return val
+
+if __name__ == '__main__':
+    try:
+        a = get_num()
+        b = get_num()
+    except Exception as e:
+        print(e)
+        exit()
+    print(f'{a}+{b}={a+b}')
