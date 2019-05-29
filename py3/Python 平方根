@@ -1,0 +1,12 @@
+#! /usr/bin/env python
+
+import math
+# 平方根，又叫二次方根，表示为〔√￣〕，如：数学语言为：√￣16=4。语言描述为：根号下16=4。
+
+def get_sqrt():
+    val = float(input('请输入一个数字:'))
+    ret = math.sqrt(val)
+    print(f'{val}的2次平方根为{ret}')
+
+if __name__ == '__main__':
+    get_sqrt()
